@@ -35,7 +35,7 @@ const diceValue = document.getElementById("diceValue");
 const couponCode = document.getElementById("couponCode");
 
 let total = 0;
-let rollCount = 0;
+let rollCount = 1;
 
 img3.addEventListener("click", function() {
   diceContainer.style.display = "block";
@@ -64,7 +64,7 @@ img4.addEventListener("click", function() {
   )}`;
 });
 
-let currentImage = 1;
+let currentImage = 0;
 let attempts = 0;
 img1.addEventListener("click", function() {
     if (currentImage === 1) {
@@ -99,7 +99,7 @@ img1.addEventListener("click", function() {
     } else if (attempts === 0) {
       attempts++;
       alert("Please try again to score more than 10");
-    }  else if (attempts === 1) {
+    }  else if (attempts === 2) {
         attempts++;
         alert("Bad luck");
       } else {
