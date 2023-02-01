@@ -64,7 +64,7 @@ img4.addEventListener("click", function() {
   )}`;
 });
 
-let currentImage = 0;
+let currentImage = 1;
 let attempts = 0;
 img1.addEventListener("click", function() {
     if (currentImage === 1) {
@@ -99,7 +99,7 @@ img1.addEventListener("click", function() {
     } else if (attempts === 0) {
       attempts++;
       alert("Please try again to score more than 10");
-    }  else if (attempts === 2) {
+    }  else if (attempts === 1) {
         attempts++;
         alert("Bad luck");
       } else {
