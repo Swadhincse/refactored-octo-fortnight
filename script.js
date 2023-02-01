@@ -7,13 +7,6 @@ const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
 const registerForm = document.getElementById("registerForm");
 const registeredInfo = document.getElementById("registeredInfo");
-const diceContainer = document.getElementById("diceContainer");
-const couponContainer = document.getElementById("couponContainer");
-const img3 = document.getElementById("img3");
-const img4 = document.getElementById("img4");
-const dice = document.getElementById("dice");
-const diceValue = document.getElementById("diceValue");
-const couponCode = document.getElementById("couponCode");
 
 let name = "";
 let username = "";
@@ -33,6 +26,13 @@ img2.addEventListener("click", function() {
   infoContainer.style.display = "block";
   registeredInfo.innerHTML = `Name: ${name}<br>Username: ${username}`;
 });
+const diceContainer = document.getElementById("diceContainer");
+const couponContainer = document.getElementById("couponContainer");
+const img3 = document.getElementById("img3");
+const img4 = document.getElementById("img4");
+const dice = document.getElementById("dice");
+const diceValue = document.getElementById("diceValue");
+const couponCode = document.getElementById("couponCode");
 
 let total = 0;
 let rollCount = 0;
@@ -114,6 +114,10 @@ img1.addEventListener("click", function() {
     this.style.pointerEvents = "none";
   }
 });
-
+document.getElementById("img4").onclick = function() {
+    document.getElementById("img4").style.pointerEvents = "none";
+    let coupon = Math.floor(Math.random() * 1000000000000).toString();
+    document.getElementById("congratulation").style.display = "block";
+  };
 
 
