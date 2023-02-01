@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" class="css">
+</head>
+
+<body>
+    <div class="gallery">
+        <div class="img-container">
+            <img src="./carimg1.jpg" id="img1" class="img">
+        </div>
+        <div class="img-container">
+            <img src="./carimg2.jpg" id="img2" class="img">
+        </div>
+        <div class="img-container">
+            <img src="./carimg3.jpg" id="img3" class="img">
+        </div>
+        <div class="img-container">
+            <img src="./carimg4.jpg" id="img4" class="img">
+        </div>
+    </div>
+
+
+    <div id="formContainer" style="display:none;">
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name"><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <input type="text" id="username" placeholder="Username"><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="diceContainer" style="display:none;">
+        <img src="./dice.jpg" width=" 200px" id="dice">
+        <p id="diceValue"></p>
+    </div>
+
+    <div id="couponContainer" style="display:none;">
+        <p id="couponCode"></p>
+    </div>
+
+    <div id="infoContainer" style="display:none;">
+        <p id="registeredInfo"></p>
+    </div>
+
+
+    <div id="dice" class="hidden">
+        <img src="./dice.jpg" id="dice-img">
+    </div>
+
+    <div id="result" class="hidden">
+        <p id="result-text"></p>
+    </div>
+
+    <div id="congratulation" class="hidden">
+        <img src="./congratulation.jpg">
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
