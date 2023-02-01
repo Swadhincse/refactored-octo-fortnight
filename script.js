@@ -33,7 +33,7 @@ const img4 = document.getElementById("img4");
 const dice = document.getElementById("dice");
 const diceValue = document.getElementById("diceValue");
 const couponCode = document.getElementById("couponCode");
-
+const result = document.querySelector("result");
 let total = 0;
 let rollCount = 1;
 
